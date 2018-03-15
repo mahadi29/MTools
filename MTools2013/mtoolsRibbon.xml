@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab idMso="TabCreate" visible="false"/>
+      <tab id="mtools" label="MTools" visible="true">
+        <group id="sdt" label="SDT Tools">
+          <button id="insRow" label="Insert Rows" description="Insert a blank row after a series of identical Value(ID)"
+            size="large" imageMso="CellsInsertDialog" onAction="insertRow" />
+          <button id="CoordinateGenerator" label="Coord Generator (with formula)"
+            size="large" imageMso="MacroNames" onAction="GenCoordinate" />
+          <!--<button id="lowstValue" label="Find Lowest Values"
+            size="large" imageMso="TableRowsInsertBelowWord" onAction="GetLowestValue" />-->
+        </group>
+
+        <group id="fmg" label="FMG Tools">
+          <button id="dataInventory" label="Make Inventory (Time Series)" description="Get monthly inventory list of time series data instantly by selecting only Date and Vale column."
+            size="large" imageMso="AccessListEvents" onAction="DataInventory" />
+          <button id="xns11" label="Make XNS11 Raw file" description="Make xns11 raw file from cross section data."
+            size="large" imageMso="DatasheetColumnLookup" onAction="xns11" />
+        </group>
+        
+          <group id="abt" label=" About ">
+          <button id="help" label="Help" description="Get help about using the Mtools."
+            size="normal" imageMso="TipWizardHelp" onAction="mtoolsHelp" />
+          <button id="aboutMe" label="About" description="Know the people behind MTools."
+            size="normal" imageMso="Organizer" onAction="AboutMe" />
+        </group>  
+      
+        
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
