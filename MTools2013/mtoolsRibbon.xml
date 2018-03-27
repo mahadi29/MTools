@@ -7,14 +7,16 @@
         <group id="sdt" label="SDT Tools">
           <button id="insRow" label="Insert Rows" description="Insert a blank row after a series of identical Value(ID)"
             size="large" imageMso="CellsInsertDialog" onAction="insertRow" />
-          <button id="CoordinateGenerator" label="Coord Generator (with formula)"
-            size="large" imageMso="MacroNames" onAction="GenCoordinate" />
+          <button id="CoordinateGenerator" label="Coord. Generator [with formula]"
+            size="large" imageMso="ControlLayoutStacked" onAction="GenCoordinate" />
+          <button id="groupPlot" label="Group Plot in Excel"
+            size="large" imageMso="ChartRefresh" onAction="GroupPlot" />
           <!--<button id="lowstValue" label="Find Lowest Values"
             size="large" imageMso="TableRowsInsertBelowWord" onAction="GetLowestValue" />-->
         </group>
 
         <group id="fmg" label="FMG Tools">
-          <button id="dataInventory" label="Make Inventory (Time Series)" description="Get monthly inventory list of time series data instantly by selecting only Date and Vale column."
+          <button id="dataInventory" label="Make Inventory [Time Series]" description="Get monthly inventory list of time series data instantly by selecting only Date and Vale column."
             size="large" imageMso="AccessListEvents" onAction="DataInventory" />
           <button id="xns11" label="Make XNS11 Raw file" description="Make xns11 raw file from cross section data."
             size="large" imageMso="DatasheetColumnLookup" onAction="xns11" />

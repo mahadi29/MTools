@@ -1099,6 +1099,16 @@ namespace MTools2013
 
          }
         
+
+        public void GroupPlot(Office.IRibbonControl control)
+        {
+            
+            string[] SectionArray = {"1a","1a","1a","1a","","","","2a","2a","2a","2a","2a","","3a","3a","3a","3a","",""};
+            var gp = new GroupPlotter(SectionArray);
+            MessageBox.Show(gp.FirstIndexOfSections.Count.ToString()+"+" + gp.LastIndexOfSections.Count.ToString()+"="+ gp.NoOfSections.ToString());
+        }
+
+
         public void AboutMe(Office.IRibbonControl control)
         {
 
